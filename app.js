@@ -13,7 +13,7 @@ function fetchRandomTalk() {
 function updateValue() {
     var rangeInput = document.getElementById("myRange");
     var value = rangeInput.value;
-    console.log("valor:" + value)
+    console.log("value:" + value)
     for (let i = 0; i < value; i) {
         fetchRandomTalk();
     }
