@@ -1,5 +1,5 @@
 function fetchRandomTalk() {
-    fetch('https://en.wikipedia.org/api/rest_v1/page/random/title')
+    fetch('https://fr.wikipedia.org/api/rest_v1/page/random/title')
     .then(response => response.json())
     .then(data => {
         const pageTitle = data.items[0].title;

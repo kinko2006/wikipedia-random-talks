@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wikipedia Random Talks</title>
-    <script src="app.js"></script>
+    <script src="app.js" id="scriptTag"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <script>
+        function pt() {
+            var scriptTag = document.getElementById('scriptTag');
+            if (scriptTag) {
+                scriptTag.src = 'pt.js';
+            }
+        }
+
+        function en() {
+            var scriptTag = document.getElementById('scriptTag');
+            if (scriptTag) {
+                scriptTag.src = 'app.js';
+            }
+        }
+
+        function es() {
+            var scriptTag = document.getElementById('scriptTag');
+            if (scriptTag) {
+                scriptTag.src = 'pt.js';
+            }
+        }
+        function fr() {
+            var scriptTag = document.getElementById('scriptTag');
+            if (scriptTag) {
+                scriptTag.src = 'pt.js';
+            }
+        }
+    </script>
+    
+    <div class="lang">
+        <button onchange="pt()">pt</button>
+        <button onchange="en()">en</button>
+        <button onchange="es()">es</button>
+        <button onchange="fr()">fr</button>
+        <button onchange="cn()">cn</button>
+    </div>
     <h1>Results:</h1>
     <input type="range" id="myRange" min="0" max="50" onchange="updateValue()">
     <ul id="results"></ul>
