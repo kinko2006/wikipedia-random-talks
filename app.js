@@ -23,7 +23,7 @@ function updateValue() {
      var value = rangeInput.value;
      console.log("valor:" + value)
      
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < value; i++) {
         fetchRandomTalk();
     }
 }
