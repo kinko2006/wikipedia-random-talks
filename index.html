@@ -37,16 +37,11 @@
             }
         }
     </script>
-    
-    <div class="lang">
-        <button onchange="pt()">pt</button>
-        <button onchange="en()">en</button>
-        <button onchange="es()">es</button>
-        <button onchange="fr()">fr</button>
-        <button onchange="cn()">cn</button>
-    </div>
+
     <h1>Results:</h1>
-    <input type="range" id="myRange" min="0" max="50" onchange="updateValue()">
+    <input type="range" id="myRange" min="0" max="50" onchange="showValue()"> <h1 id="varhone"></h1>
+    <button onclick="updateValue()">show</button>
+    <button><a href="index.html">refresh</a></button>
     <ul id="results"></ul>
 
 

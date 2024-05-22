@@ -10,13 +10,20 @@ function fetchRandomTalk() {
     .catch(error => console.error('error:', error));
 }
 
-function updateValue() {
+function showValue(){
     var rangeInput = document.getElementById("myRange");
     var value = rangeInput.value;
-    console.log("valor:" + value)
-    for (let i = 0; i < value; i++) {
+    document.getElementById("varhone").innerText = value;
+}
+
+
+
+function updateValue() {
+     var rangeInput = document.getElementById("myRange");
+     var value = rangeInput.value;
+     console.log("valor:" + value)
+     
+    for (let i = 0; i < 10; i++) {
         fetchRandomTalk();
     }
 }
-
-updateValue();
