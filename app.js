@@ -6,9 +6,15 @@ function fetchRandomTalk() {
         const resultElement = document.createElement('li');
         resultElement.textContent = pageTitle;
         document.getElementById('results').appendChild(resultElement);
-        var linkWiki = 'https://pt.wikipedia.org/wiki/' + pageTitle;
+        var linkWiki = 'https://en.wikipedia.org/wiki/' + pageTitle;
     const objj = Object.assign(document.getElementById('results'), {
-    innerHTML: '<a href=${linkWiki}></a>'});
+    innerHTML: `<div class="spotify">
+    <a href=${linkWiki}><h1>${pageTitle}</h1></a> 
+    
+    
+    
+    </div>`
+});
             
     })
     .catch(error => console.error('error:', error));
