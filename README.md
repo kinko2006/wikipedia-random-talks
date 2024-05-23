@@ -1,4 +1,4 @@
 # wikipedia-random-talks
 
 
-https://kinko2006.github.io/wikipedia-random-talks/
+https://kinko6.github.io/wikipedia-random-talks/
