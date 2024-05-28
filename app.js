@@ -1,14 +1,14 @@
 function fetchRandomTalk() {
-    fetch('https://pt.wikipedia.org/api/rest_v1/page/random/title')
+    fetch('https://en.wikipedia.org/api/rest_v1/page/random/title')
     .then(response => response.json())
     .then(data => {
         const pageTitle = data.items[0].title;
         const resultElement = document.createElement('li');
         resultElement.textContent = pageTitle;
         document.getElementById('results').appendChild(resultElement);
-        var linkWiki = 'https://pt.wikipedia.org/wiki/' + pageTitle;
+        var linkWiki = 'https://en.wikipedia.org/wiki/' + pageTitle;
     const objj = Object.assign(document.getElementById('results'), {
-    innerHTML: `<div class="wiki">
+    innerHTML: `<div class="spotify">
     <a href=${linkWiki}><h1>${pageTitle}</h1></a> 
     
     
