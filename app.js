@@ -19,10 +19,14 @@ fetch('https://en.wikipedia.org/api/rest_v1/page/random/title')
      const resultsContainer = document.getElementById('results');
      const elements = [];
      elements.forEach(element => {
-         resultsContainer.appendChild(element);
+         resultsContainer.appendChild(element)
      })
-        .catch(error => console.error('error:', error))
-    }
+        .catch(error => {
+        
+            console.error('error:', error)
+        })
+
+}
 
 
 
