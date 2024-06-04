@@ -9,18 +9,19 @@
 </head>
 <body>
 
-    <h1>Results:</h1>
+    <h1>wikipediarandomtalks</h1>
+<div class="range-show">
+    <input type="range" id="myRange" min="0" max="50" onchange="showValue()"> <br>
+    <button class="botao" onclick="updateValue()">show</button>
+    
+</div>
 
-    <input type="range" id="myRange" min="0" max="50" onchange="showValue()">
+<div class="texts-results">
+    <h1>Results: </h1>
     <h1 id="varhone"></h1>
-    <button onclick="updateValue()">show</button>
-    <button><a href="index.html">refresh</a></button>
-    <ul id="results"></ul> 
-
-
-
-
-
+</div>
+    
+    <div id="results"></div> 
 
 
 </body>

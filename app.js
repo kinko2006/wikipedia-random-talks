@@ -8,9 +8,11 @@ function fetchWiki() {
             const element = document.createElement('div');
             element.classList.add('wiki');
             element.innerHTML = `
+            <ul>
                 <a href="${linkWiki}">
                     <h1>${pageTitle}</h1>
                 </a> 
+            </ul>
             `;
             
             return element;
@@ -46,3 +48,4 @@ function showValue() {
     const value = rangeInput.value;
     document.getElementById("varhone").innerText = value;
 }
+
