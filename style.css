@@ -1,43 +1,34 @@
 *{
     margin-left: 6px;
 }
-
 a{
     text-decoration: none;
     color: black;
 }
-
 body{
     background-color: black;
     font-family: sans-serif;
 }
-
 h1, li, input{
     color: white;
 }
-
 .wiki h1{
     font-size: 35px;
     margin: 2px 0px;
 }
-
 #varone{
     font-size: 10px;
 }
-
 ul{
     list-style: none;
 }
-
 .wiki ul{
     list-style: square;
     color: white;
 }
-
 .texts-results{
     display: flex;
 }
-
 .botao{
     background-color: transparent;
     color: white;
@@ -48,9 +39,28 @@ ul{
     cursor: pointer;
     margin: 10px
 }
-
 .botao:hover{
     background-color: white;
     color: black;
     border: 2px solid black;
 }
+.loading {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    transform: scale(5);
+  }
+  .c-loader {
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #51d4db;
+    height: 50px;
+    width: 50px;
+  }
+  @keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
