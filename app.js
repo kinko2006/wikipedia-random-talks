@@ -22,6 +22,12 @@ function fetchWiki() {
 function updateValue() {
     const rangeInput = document.getElementById("myRange");
     const value = rangeInput.value;
+    var lds = document.getElementById("lds");
+    
+    
+    lds.classList.remove("hide");
+    console.log("test");
+
     console.log("valor:" + value);
 
     const resultsContainer = document.getElementById('results');
@@ -32,10 +38,12 @@ function updateValue() {
         fetchPromises.push(fetchWiki());
     }
 
+
     Promise.all(fetchPromises)
         .then(elements => {
             elements.forEach(element => {
                 resultsContainer.appendChild(element);
+                lds.classList.add("hide");
             });
         })
         .catch(error => {
@@ -48,4 +56,15 @@ function showValue() {
     const value = rangeInput.value;
     document.getElementById("varhone").innerText = value;
 }
+
+/*
+function Show() {
+    var app = document.getElementsByClassName("lds-ellipsis");
+    
+    app.classList.add("hide");
+    exe.classList.remove("hide");
+    console.log("test");
+  }
+
+*/
 
